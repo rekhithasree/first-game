@@ -1,0 +1,43 @@
+print("hello")
+name= input("what is your name?")
+age= int(input("what is ur age?"))
+print("hi", name, "you are", age, 'years old')
+if age >= 18 :
+  print('you r allowed to play')
+else:
+    print('you are not allowed to play')
+
+health = 10
+print('hi', name, ', lets get started.You get 10 health')
+ans1= input('their is a river do you want to go across it or around it (across/around)')
+if ans1 == "around" :
+  print('you crossed the river succefully')
+  print("your score" ,health)
+elif ans1 == "across" :
+ print("you lost 5 health")
+ health -= 5
+ print("your score" ,health)
+
+else :
+  print(" invalid entry")
+ 
+
+ans2=input('now there is a house and river in front. which do you want to enter? (house/ river)  ')
+if ans2 == "house":
+  print( "the house owner is inside the house and he does't like you and you lose 5 point")
+  health -=5
+  print("your score" ,health)
+elif ans2 == "river" :
+  print( 'you lost your health')
+  health-=10
+  print("your score" ,health)
+
+else :
+  print( 'invalid entry')
+
+
+if health <= 0 :
+ print( "you lost the game" )
+else:
+  print('you won the game')
+  print("your score" ,health)
